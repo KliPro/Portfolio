@@ -1,0 +1,657 @@
+/* =================================================_
+   RESET E ESTILO TECH TERMINAL
+================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #c9d1d9;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+/* =================================================
+   NAVBAR EQUILIBRADA E CENTRALIZADA
+================================================= */
+/* NAVBAR COM CENTRALIZAÇÃO PERFEITA E TAMANHO IDEAL */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(5, 5, 5, 0.95);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.nav-logo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    z-index: 2; /* Garante que o logo fica por cima se necessário */
+}
+
+.highlight {
+    color: #ffb7c5;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* O segredo absoluto para centrar matematicamente no ecrã */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #8b949e;
+    font-size: 0.8rem; /* Tamanho excelente e legível */
+    font-weight: 600;
+    padding: 8px 12px; /* Botões com tamanho adequado e proporcional */
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffb7c5;
+    border: 1px solid #ffb7c5;
+    background-color: rgba(255, 183, 197, 0.05);
+}
+
+/* =================================================
+   SEÇÃO INÍCIO (HERO)
+================================================= */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.terminal-tag {
+    color: #ffb7c5;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    color: #8b949e;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid #ffb7c5;
+    color: #ffb7c5;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffb7c5;
+    color: #050505;
+}
+
+/* =================================================
+   SEÇÕES GERAIS
+================================================= */
+.section {
+    padding: 90px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.alt-bg {
+    background-color: #0a0a0a;
+    max-width: 100%;
+    padding: 90px 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ffb7c5;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* =================================================
+   ESTRUTURA DE DUAS COLUNAS (WHOAMI + TIMELINE)
+================================================= */
+.bio-timeline-container {
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr;
+    gap: 40px;
+    text-align: left;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.terminal-subtitle {
+    color: #ffb7c5;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.whoami-box {
+    background-color: #080808;
+    border: 1px solid #222;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.bio-text {
+    font-size: 0.85rem;
+    color: #9da5b4;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.bio-text:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-items {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #222;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -44px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #050505;
+    border: 2px solid #555;
+    color: #8b949e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+.pink-badge {
+    border-color: #ffb7c5;
+    color: #ffb7c5;
+    box-shadow: 0 0 10px rgba(255, 183, 197, 0.2);
+}
+
+.timeline-card {
+    background-color: #080808;
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.timeline-card:hover {
+    border-color: #ffb7c5;
+}
+
+.timeline-date {
+    font-size: 0.75rem;
+    color: #ffb7c5;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.timeline-card h3 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.timeline-local {
+    color: #8b949e;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.timeline-card p {
+    font-size: 0.8rem;
+    color: #8b949e;
+}
+
+/* =================================================
+   HABILIDADES E FILTROS
+================================================= */
+.skills-subtitle {
+    font-size: 0.85rem;
+    color: #8b949e;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: #050505;
+    border: 1px solid #222;
+    color: #8b949e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: rgba(255, 183, 197, 0.1);
+    border-color: #ffb7c5;
+    color: #ffb7c5;
+    box-shadow: 0 0 12px rgba(255, 183, 197, 0.15);
+}
+
+.skills-grid-new {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    background-color: #080808;
+    border: 1px solid #222;
+    padding: 25px 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.skill-box:hover {
+    border-color: #ffb7c5;
+    transform: translateY(-3px);
+}
+
+.skill-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.skill-box h3 {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.skill-box p {
+    color: #8b949e;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+/* =================================================
+   TRAJETÓRIA PROFISSIONAL
+================================================= */
+.professional-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prof-card {
+    background-color: #080808;
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 3px solid #ffb7c5;
+}
+
+.prof-card h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.prof-local {
+    color: #ffb7c5;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.prof-card p {
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+/* =================================================
+   PROJETOS E DETALHES EXPANSÍVEIS MELHORADOS
+================================================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 30px;
+    text-align: left;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #080808;
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #ffb7c5;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-category {
+    font-size: 0.65rem;
+    color: #8b949e;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.status-tag {
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.status-finalizado {
+    background-color: rgba(46, 160, 67, 0.15);
+    color: #3fb950;
+    border: 1px solid rgba(46, 160, 67, 0.4);
+}
+
+.status-andamento {
+    background-color: rgba(210, 153, 34, 0.15);
+    color: #d29922;
+    border: 1px solid rgba(210, 153, 34, 0.4);
+}
+
+.status-pausa {
+    background-color: rgba(139, 148, 158, 0.15);
+    color: #8b949e;
+    border: 1px solid rgba(139, 148, 158, 0.4);
+}
+
+.project-card h3 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #8b949e;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Detalhes Expansíveis Refinados */
+.project-details {
+    margin: 15px 0;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 12px;
+}
+
+.project-details summary {
+    color: #ffb7c5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.project-details summary:hover {
+    opacity: 0.8;
+}
+
+.details-content {
+    margin-top: 12px;
+    background-color: #030303;
+    border: 1px solid #222;
+    border-left: 3px solid #ffb7c5;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.details-content p {
+    font-size: 0.72rem;
+    color: #9da5b4;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.details-content p:last-child {
+    margin-bottom: 0;
+}
+
+.details-content strong {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.project-footer {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.project-link {
+    color: #ffb7c5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* =================================================
+   CERTIFICADOS E CURSOS
+================================================= */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    text-align: left;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background-color: #080808;
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.cert-card:hover {
+    border-color: #ffb7c5;
+    transform: translateY(-3px);
+}
+
+.cert-platform {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    background-color: rgba(255, 183, 197, 0.1);
+    color: #ffb7c5;
+    border: 1px solid rgba(255, 183, 197, 0.3);
+    width: fit-content;
+    margin-bottom: 12px;
+}
+
+.cert-card h3 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.cert-hours {
+    color: #8b949e;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.cert-link {
+    color: #ffb7c5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 15px;
+    margin-top: auto;
+    display: inline-block;
+    transition: opacity 0.2s;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* =================================================
+   CONTATO E RODAPÉ
+================================================= */
+.contact-text {
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    color: #8b949e;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-btn {
+    background-color: #050505;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: 1px solid #222;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    border-color: #ffb7c5;
+    color: #ffb7c5;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #050505;
+    border-top: 1px solid #1f1f1f;
+    color: #8b949e;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* =================================================
+   RESPONSIVIDADE (TELEMÓVEIS)
+================================================= */
+@media (max-width: 768px) {
+    .bio-timeline-container {
+        grid-template-columns: 1fr;
+    }
+}

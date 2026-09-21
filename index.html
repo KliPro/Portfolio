@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">  <!-- Tag principal para o idioma português da página -->
 <head>  <!-- Abre a seção de "metadados" do site, nada que esta aqui aparece no site --> 
-    <meta charset="UTF=8">  <!-- Codificação para manter a gramatica com caracteres -->
+    <meta charset="UTF-8">  <!-- Codificação para manter a gramatica com caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- torna o site responsivo em celulares, tablets e computadores -->
-    <title>Klissia Claudia | Portfólio</title>  <!-- Importa uma fonte externa do Google Fonts (neste caso, a fonte Poppins) para ser usada no site. Os números (300;400;500;600;700) representam as espessuras (pesos) da fonte que foram baixadas: do mais fino (light) até o mais grosso (bold). -->
+    <title>KLISSIA_DEV | Portfólio</title>  <!-- Importa uma fonte externa do Google Fonts (neste caso, a fonte Poppins) para ser usada no site. Os números (300;400;500;600;700) representam as espessuras (pesos) da fonte que foram baixadas: do mais fino (light) até o mais grosso (bold). -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Importa as fontes do Google Fonts -->
 </head>
 
-     <!-- Menu de navegação fixo no topo da página, com links de seções do site -->
+    <!-- Menu de navegação fixo no topo da página, com links de seções do site -->
     <!--  Tudo que dentro do body aparece no site -->
 <body>
     <nav class="navbar"> <!--serve para dar um nome a esse elemento, para poder ser modificado no CSS -->
-        <div class="nav-logo">Kli<span>Pro</span></div> <!-- aplicar uma cor diferente ou um estilo especial apenas nessa palavra, separando-a do resto do logo ("Kli"). -->
+        <div class="nav-logo">>>_ KLISSIA<span class="highlight">.DEV</span></div> <!-- aplicar uma cor diferente ou um estilo especial apenas nessa palavra, separando-a do resto do logo ("Kli"). -->
         <ul class="nav-links"> <!--- Lista não ordenada(ul) com links de navegação (li) para as seções do site. Utilizado tmb para ser utilizado no css para dar estilo a esses links. -->
             <li><a href="#inicio">Início</a></li> <!-- Cada linha <li>...</li> representa um item da lista (um botão/opção do menu). -->
             <li><a href="#sobre">Sobre</a></li> <!-- Dentro de cada <li>, existe uma tag <a> (âncora) com o atributo href (ex: href="#sobre") -->
             <li><a href="#habilidades">Habilidades</a></li> <!-- Como funciona o link interno: Quando o usuário clica em "Sobre", por exemplo, o navegador não abre uma página nova; ele faz um scroll (rolagem) suave até a seção da mesma página que possui o identificador (id) correspondente (neste caso, id="sobre").-->
+            <li><a href="#certificados">Certificados</a></li>
             <li><a href="#profissional">Profissional</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -22,38 +25,204 @@
     </nav>
 
         <!-- Início do site (HERO) -->
-    <section id="inicio" class="hero"> <!-- <section serve para dividir a página em blocos temáticos --> <!-- é o "ancoradouro" que faz com que o botão do menu que vimos no passo anterior ("Início") saiba para onde rolar a página quando clicado. -->
-        <div class="hero-content"> <!-- é usado no CSS para estilizar essa grande área de destaque (definindo tamanho, imagem de fundo ou cores chamativas). -->
-            <h1>Olá, eu sou a <span class="destacar">Klissia Claudia</span></h1> <!-- A tag <span> é usada para aplicar estilos específicos a uma parte do texto, neste caso, a palavra "Klissia Claudia". -->
-            <p>Estudante de Ciência da Computação | Desenvolvedora Web & Mobile</p>
-            <a href="#projetos" class="btn">Explorar Projetos</a>
+    <section id="inicio" class="hero"> <!-- usado para navegação interna, como links que rolam a página até aqui) e a classe hero, geralmente usada no CSS para estilizar o banner principal. -->
+        <div class="hero-content"> <!-- Uma caixa (div) que agrupa todo o conteúdo textual e interativo de dentro do banner, facilitando o alinhamento e a centralização via CSS.-->
+            <p class="terminal-tag">&gt; HELLO_WORLD</p> <!-- Um parágrafo com um toque de programação. O símbolo &gt; exibe o caractere > (usado em linhas de comando) -->
+            <h1>OLÁ, EU SOU A <span class="highlight">KLISSIA CLAUDIA</span></h1> <!-- Apresenta seu nome. A tag <span> com a classe highlight serve para destacar o nome visualmente (talvez com uma cor diferente ou efeito de neon).-->
+            <p class="hero-desc">ESTUDANTE DE CIÊNCIA DA COMPUTAÇÃO | DEV WEB & MOBILE</p>
+            <a href="#projetos" class="btn">&gt; EXECUTAR_PROJETOS</a> <!-- Um botão estilizado (classe btn) que, ao ser clicado, rola a página até a seção de projetos. O texto do botão é uma brincadeira com o comando "executar" em programação. -->
         </div>
     </section>
 
-    <!-- Seção "Sobre" -->
-     <section id="sobre" class="section">
-        <h2 class="section-title">Sobre Mim</h2>
-        <div class="about-container">
-            <p>
-                Olá! Sou a Klissia Claudia, estudante de Ciência da Computação no Centro Universitário Eniac. Sou apaixonada por tecnologia, desenvolvimento de software e por transformar ideias criativas em soluções digitais funcionais e eficientes. A minha jornada une conhecimentos analíticos com a constante busca por inovações no universo da programação.
-            </p>
+    <!-- 2. SOBRE E TRAJETÓRIA (ESTILO TIMELINE & WHOAMI) -->
+    <section id="sobre" class="section"> <!-- serve para o link do menu superior ("Sobre") rolar a página diretamente até aqui -->
+        <h2 class="section-title">CONHEÇA UM POUCO DA MINHA HISTÓRIA</h2> <!-- O título da seção, mantendo o mesmo padrão visual (section-title) que vimos na parte "Sobre Mim".-->
+        
+        <div class="bio-timeline-container"> <!-- Container para o cronograma da biografia -->
+
+    <!-- COLUNA DA ESQUERDA: WHOAMI -->
+            <div class="whoami-box">
+                <p class="terminal-subtitle">&gt; whoami</p>
+                <p class="bio-text">
+                    SOU A KLISSIA CLAUDIA, ESTUDANTE DE CIÊNCIA DA COMPUTAÇÃO NO CENTRO UNIVERSITÁRIO ENIAC. ATUO NO DESENVOLVIMENTO DE APLICAÇÕES WEB E MOBILE, UNINDO O PENSAMENTO ANALÍTICO COM A CRIAÇÃO DE SOLUÇÕES DIGITAIS EFICIENTES.
+                </p>
+                <p class="bio-text">
+                    NO DIA A DIA, ENFRETO DESAFIOS TÉCNICOS REAIS NO DESENVOLVIMENTO DE SISTEMAS, FOCANDO NA LÓGICA DE PROGRAMAÇÃO, ESTRUTURAÇÃO DE BANCOS DE DADOS E BOAS PRÁTICAS DE CÓDIGO.
+                </p>
+                <p class="bio-text">
+                    MINHA TRAJETÓRIA TAMBÉM ME CONDUZIU PELA ÁREA DA SAÚDE COMO TÉCNICA DE ENFERMAGEM EM CENTRO CIRÚRGICO, ONDE DESENVOLVI RIGOR TÉCNICO, GESTÃO DE FLUXOS CRÍTICOS E ALTA PRECISÃO SOB PRESSÃO.
+                </p>
+            </div>
+
+            <!-- COLUNA DA DIREITA: TIMELINE PROFISSIONAL -->
+            <div class="timeline-wrapper"> <!-- Container para o cronograma da biografia -->
+                <p class="terminal-subtitle">&gt; timeline -- professional</p> <!-- Título do cronograma -->
+                
+                <div class="timeline-items"> <!-- Container para os itens do cronograma -->
+                    
+                    <!-- Item 1 -->
+                    <div class="timeline-item"> <!-- Item do cronograma -->
+                        <div class="timeline-badge pink-badge">TI</div> <!-- Badge do item -->
+                        <div class="timeline-card"> <!-- Cartão do item -->
+                            <span class="timeline-date">2026 — PRESENTE</span> <!-- Data do item-->
+                            <h3>ESTÁGIO EM DESENVOLVIMENTO FULL STACK & BACK-END</h3> <!-- Título do item -->
+                            <p class="timeline-local">CENTRO UNIVERSITÁRIO ENIAC</p> <!-- Local do item -->
+                            <p>ATUAÇÃO NO DESENVOLVIMENTO DE APLICAÇÕES WEB, CRIAÇÃO E INTEGRAÇÃO DE APIS, LÓGICA DE SERVIDOR, AUTOMAÇÃO E CLOUD COMPUTING</p> <!-- Descrição do item -->
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item"> <!-- Item do cronograma -->
+                        <div class="timeline-badge">SAÚDE</div> <!-- Badge do item -->
+                        <div class="timeline-card"> <!-- Cartão do item -->
+                            <span class="timeline-date">EXPERIÊNCIA PRÉVIA | ATUAL</span> <!-- Data do item-->
+                            <h3>TÉCNICA DE ENFERMAGEM</h3> <!-- Título do item -->
+                            <p class="timeline-local">CENTRO CIRÚRGICO</p> <!-- Local do item -->
+                            <p>GESTÃO DE FLUXOS CRÍTICOS, ATUAÇÃO EM AMBIENTES DE ALTA EXIGÊNCIA E EXTREMA PRECISÃO OPERATÓRIA.</p> <!-- Descrição do item -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
-        <!-- 3. HABILIDADES -->
-    <section id="habilidades" class="section alt-bg"> <!-- serve para o link do menu superior ("Habilidades") rolar a página diretamente até aqui -->
-        <h2 class="section-title">Habilidades</h2> <!-- O título da seção, mantendo o mesmo padrão visual (section-title) que vimos na parte "Sobre Mim".-->
-        <div class="skills-grid"> <!-- Serve para utilizar no CSS -->
-            <div class="skill-card"><b>Java</b></div>
-            <div class="skill-card"><b>Python</b></div>
-            <div class="skill-card"><b>JavaScript</b></div> <!-- Dentro de cada caixinha, a tag <b> deixa o nome da tecnologia em negrito para dar destaque visual. -->
-            <div class="skill-card"><b>HTML5 & CSS3</b></div>
-            <div class="skill-card"><b>MySQL</b></div>
-            <div class="skill-card"><b>Git & GitHub</b></div>
-            <div class="skill-card"><b>VS Code</b></div>
-            <div class="skill-card"><b>Android Studio</b></div>
+        <!-- 3. HABILIDADES COM FILTROS E CATEGORIAS -->
+    <section id="habilidades" class="section alt-bg">
+        <h2 class="section-title">&gt; TECH_STACK</h2>
+        <p class="skills-subtitle">TECNOLOGIAS QUE USO NO DIA A DIA E NOS MEUS ESTUDOS</p>
+
+        <!-- BOTÕES DE FILTRO -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterSkills('all')">&gt; TODAS</button>
+            <button class="filter-btn" onclick="filterSkills('frontend')">🎨 FRONTEND</button>
+            <button class="filter-btn" onclick="filterSkills('backend')">⚙️ BACKEND</button>
+            <button class="filter-btn" onclick="filterSkills('database')">💾 BANCOS DE DADOS</button>
+            <button class="filter-btn" onclick="filterSkills('tools')">🛠️ FERRAMENTAS</button>
+        </div>
+
+        <!-- GRELHA DE CARTÕES DE HABILIDADES -->
+        <div class="skills-grid-new">
+            
+            <div class="skill-box" data-category="backend">
+                <span class="skill-icon">☕</span>
+                <h3>JAVA</h3>
+                <p>ESTUDO & PROJETOS</p>
+            </div>
+
+            <div class="skill-box" data-category="backend">
+                <span class="skill-icon">🐍</span>
+                <h3>PYTHON</h3>
+                <p>AUTOMAÇÃO & LÓGICA</p>
+            </div>
+
+            <div class="skill-box" data-category="frontend">
+                <span class="skill-icon">💻</span>
+                <h3>JAVASCRIPT</h3>
+                <p>WEB INTERATIVA</p>
+            </div>
+
+            <div class="skill-box" data-category="frontend">
+                <span class="skill-icon">🌐</span>
+                <h3>HTML5 & CSS3</h3>
+                <p>ESTRUTURA & DESIGN</p>
+            </div>
+
+            <div class="skill-box" data-category="database">
+                <span class="skill-icon">🗄️</span>
+                <h3>MYSQL</h3>
+                <p>BANCOS RELACIONAIS</p>
+            </div>
+
+            <div class="skill-box" data-category="tools">
+                <span class="skill-icon">📦</span>
+                <h3>GIT & GITHUB</h3>
+                <p>CONTROLO DE VERSÃO</p>
+            </div>
+
+            <div class="skill-box" data-category="tools">
+                <span class="skill-icon">⚡</span>
+                <h3>VS CODE</h3>
+                <p>EDITOR PRINCIPAL</p>
+            </div>
+
+            <div class="skill-box" data-category="tools">
+                <span class="skill-icon">📱</span>
+                <h3>ANDROID STUDIO</h3>
+                <p>MOBILE DEVELOPMENT</p>
+            </div>
+
         </div>
     </section>
+
+    <!-- SCRIPT PARA FILTRAR AS HABILIDADES -->
+    <script>
+        function filterSkills(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const boxes = document.querySelectorAll('.skill-box');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            boxes.forEach(box => {
+                if (category === 'all' || box.getAttribute('data-category') === category) {
+                    box.style.display = 'flex';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <!-- SEÇÃO DE CERTIFICADOS / CURSOS -->
+<section id="certificados" class="section">
+    <h2 class="section-title">&gt; CERTIFICAÇÕES E CURSOS</h2>
+    
+    <div class="certs-grid">
+        
+        <!-- Certificado 1 -->
+        <div class="cert-card">
+            <span class="cert-platform">FIAP (Nano Course)</span>
+            <h3>CYBERSECURITY</h3>
+            <p class="cert-hours">120 horas</p>
+            <a href="certificados.pdfs/cybersecurity.pdf" target="_blank" class="cert-link">&gt; VER_CERTIFICADO.PDF</a>
+        </div>
+
+        <!-- Certificado 2 -->
+        <div class="cert-card">
+            <span class="cert-platform">Santander Open Academy</span>
+            <h3>PYTHON</h3>
+            <p class="cert-hours">8 horas — 2 Módulos</p>
+            <a href="certificados.pdfs/python.pdf" target="_blank" class="cert-link">&gt; VER_CERTIFICADO.PDF</a>
+        </div>
+
+        <!-- Certificado 3 -->
+        <div class="cert-card">
+            <span class="cert-platform">Centro Universitário Eniac</span>
+            <h3>CAPACITAÇÃO EM INTELIGÊNCIA ARTIFICIAL (CPTIA)</h3>
+            <p class="cert-hours">30 horas</p>
+            <a href="certificados.pdfs/capacitacao-ia.pdf" target="_blank" class="cert-link">&gt; VER_CERTIFICADO.PDF</a>
+        </div>
+
+        <!-- Certificado 4 -->
+        <div class="cert-card">
+            <span class="cert-platform">Santander / DIO</span>
+            <h3>CRIANDO UM PROJETO COM LOVABLE</h3>
+            <p class="cert-hours">1 hora</p>
+            <a href="certificados.pdfs/lovable.pdf" target="_blank" class="cert-link">&gt; VER_CERTIFICADO.PDF</a>
+        </div>
+
+        <!-- Certificado 5 -->
+        <div class="cert-card">
+            <span class="cert-platform">Centro Universitário Eniac</span>
+            <h3>MONTAGEM E MANUTENÇÃO DE COMPUTADORES</h3>
+            <p class="cert-hours">4 horas</p>
+            <a href="certificados.pdfs/montagem-manutencao-computadores.pdf" target="_blank" class="cert-link">&gt; VER_CERTIFICADO.PDF</a>
+        </div>
+
+    </div>
+</section>
 
     <!-- 4. TRAJETÓRIA PROFISSIONAL -->
     <section id="profissional" class="section"> <!-- O bloco estrutural da seção. O id="profissional" permite que o link "Profissional" do menu superior traga o usuário direto para cá. -->
@@ -72,27 +241,84 @@
         </div>
     </section>
 
-    <!-- 5. PRINCIPAIS PROJETOS -->
+    <!-- 4. PRINCIPAIS PROJETOS COM DETALHES EXPANSÍVEIS -->
     <section id="projetos" class="section alt-bg">
-        <h2 class="section-title">Principais Projetos</h2>
+        <h2 class="section-title">&gt; PRINCIPAIS_PROJETOS</h2>
         <div class="projects-grid">
             
+            <!-- PROJETO 1: TORCIDA PRIME STORE -->
             <div class="project-card">
-                <h3>Torcida Prime Store</h3>
-                <p>E-commerce de camisas de futebol desenvolvido com HTML, CSS, JavaScript e MySQL.</p>
-                <a href="https://github.com/KliPro/Torcida-Prime-Store" target="_blank" class="project-link">Ver no GitHub</a>
+                <div>
+                    <div class="project-header">
+                        <span class="project-category">E-COMMERCE &bull; VENDAS</span>
+                        <span class="status-tag status-pausa">EM PAUSA</span>
+                    </div>
+                    <h3>TORCIDA PRIME STORE</h3>
+                    <p>E-COMMERCE DE CAMISAS DE FUTEBOL DESENVOLVIDO COM HTML, CSS, JAVASCRIPT E MYSQL.</p>
+                </div>
+
+                <!-- Detalhes Expansíveis -->
+                <details class="project-details">
+                    <summary>&gt; VER_DETALHES</summary>
+                    <div class="details-content">
+                        <p><strong>FUNCIONALIDADES:</strong> CATÁLOGO DINÂMICO DE PRODUTOS, CARRINHO DE COMPRAS E INTEGRAÇÃO DE BANCO DE DADOS RELACIONAL.</p>
+                        <p><strong>FOCO:</strong> APRENDIZADO DE ESTRUTURAS WEB FRONT-END E GERENCIAMENTO DE DADOS VIA SQL.</p>
+                    </div>
+                </details>
+
+                <div class="project-footer">
+                    <a href="https://github.com/KliPro/Torcida-Prime-Store" target="_blank" class="project-link">&gt; VER NO GITHUB</a>
+                </div>
             </div>
 
+            <!-- PROJETO 2: ESTÉTICA ALESSANDRA -->
             <div class="project-card">
-                <h3>Estética Alessandra</h3>
-                <p>Aplicação web focada em serviços, agendamentos e gestão para o setor de estética.</p>
-                <a href="https://github.com/KliPro/estetica-alessandra" target="_blank" class="project-link">Ver no GitHub</a>
+                <div>
+                    <div class="project-header">
+                        <span class="project-category">WEB APP &bull; GESTÃO</span>
+                        <span class="status-tag status-finalizado">FINALIZADO</span>
+                    </div>
+                    <h3>ESTÉTICA ALESSANDRA</h3>
+                    <p>APLICAÇÃO WEB FOCADA EM SERVIÇOS, AGENDAMENTOS E GESTÃO PARA O SETOR DE ESTÉTICA.</p>
+                </div>
+
+                <!-- Detalhes Expansíveis -->
+                <details class="project-details">
+                    <summary>&gt; VER_DETALHES</summary>
+                    <div class="details-content">
+                        <p><strong>FUNCIONALIDADES:</strong> FLUXO DE AGENDAMENTO DE CLIENTES, INTERFACE RESPONSIVA E ORGANIZAÇÃO DE SERVIÇOS.</p>
+                        <p><strong>FOCO:</strong> CRIAÇÃO DE UMA SOLUÇÃO WEB REAL PARA OTIMIZAÇÃO DE ATENDIMENTOS COMERCIAIS.</p>
+                    </div>
+                </details>
+
+                <div class="project-footer">
+                    <a href="https://github.com/KliPro/estetica-alessandra" target="_blank" class="project-link">&gt; VER NO GITHUB</a>
+                </div>
             </div>
 
+            <!-- PROJETO 3: SYNCOPS -->
             <div class="project-card">
-                <h3>SyncOps</h3>
-                <p>Aplicativo móvel de produtividade ágil para Android desenvolvido em Java e XML no Android Studio.</p>
-                <a href="https://github.com/KliPro/SyncOps" target="_blank" class="project-link">Ver no GitHub</a>
+                <div>
+                    <div class="project-header">
+                        <span class="project-category">MOBILE &bull; PRODUTIVIDADE</span>
+                        <span class="status-tag status-andamento">EM ANDAMENTO</span>
+                    </div>
+                    <h3>SYNCOPS</h3>
+                    <p>APLICATIVO MÓVEL DE PRODUTIVIDADE ÁGIL PARA ANDROID DESENVOLVIDO EM JAVA E XML NO ANDROID STUDIO.</p>
+                </div>
+
+                <!-- Detalhes Expansíveis -->
+                <details class="project-details">
+                    <summary>&gt; VER_DETALHES</summary>
+                    <div class="details-content">
+                        <p><strong>FUNCIONALIDADES:</strong> GESTÃO DE TAREfas ÁGEIS, LAYOUTS NATIVOS EM XML E LÓGICA DE TEMPORIZADORES.</p>
+                        <p><strong>FOCO:</strong> DESENVOLVIMENTO MOBILE NATIVO E APLICAÇÃO DE CONCEITOS DE PRODUTIVIDADE.</p>
+                    </div>
+                </details>
+
+                <div class="project-footer">
+                    <a href="https://github.com/KliPro/SyncOps" target="_blank" class="project-link">&gt; VER NO GITHUB</a>
+                </div>
             </div>
 
         </div>
