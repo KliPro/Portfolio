@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">  <!-- Tag principal para o idioma português da página -->
+<head>  <!-- Abre a seção de "metadados" do site, nada que esta aqui aparece no site --> 
+    <meta charset="UTF=8">  <!-- Codificação para manter a gramatica com caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- torna o site responsivo em celulares, tablets e computadores -->
+    <title>Klissia Claudia | Portfólio</title>  <!-- Importa uma fonte externa do Google Fonts (neste caso, a fonte Poppins) para ser usada no site. Os números (300;400;500;600;700) representam as espessuras (pesos) da fonte que foram baixadas: do mais fino (light) até o mais grosso (bold). -->
+</head>
+
+     <!-- Menu de navegação fixo no topo da página, com links de seções do site -->
+    <!--  Tudo que dentro do body aparece no site -->
+<body>
+    <nav class="navbar"> <!--serve para dar um nome a esse elemento, para poder ser modificado no CSS -->
+        <div class="nav-logo">Kli<span>Pro</span></div> <!-- aplicar uma cor diferente ou um estilo especial apenas nessa palavra, separando-a do resto do logo ("Kli"). -->
+        <ul class="nav-links"> <!--- Lista não ordenada(ul) com links de navegação (li) para as seções do site. Utilizado tmb para ser utilizado no css para dar estilo a esses links. -->
+            <li><a href="#inicio">Início</a></li> <!-- Cada linha <li>...</li> representa um item da lista (um botão/opção do menu). -->
+            <li><a href="#sobre">Sobre</a></li> <!-- Dentro de cada <li>, existe uma tag <a> (âncora) com o atributo href (ex: href="#sobre") -->
+            <li><a href="#habilidades">Habilidades</a></li> <!-- Como funciona o link interno: Quando o usuário clica em "Sobre", por exemplo, o navegador não abre uma página nova; ele faz um scroll (rolagem) suave até a seção da mesma página que possui o identificador (id) correspondente (neste caso, id="sobre").-->
+            <li><a href="#profissional">Profissional</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+        <!-- Início do site (HERO) -->
+    <section id="inicio" class="hero"> <!-- <section serve para dividir a página em blocos temáticos --> <!-- é o "ancoradouro" que faz com que o botão do menu que vimos no passo anterior ("Início") saiba para onde rolar a página quando clicado. -->
+        <div class="hero-content"> <!-- é usado no CSS para estilizar essa grande área de destaque (definindo tamanho, imagem de fundo ou cores chamativas). -->
+            <h1>Olá, eu sou a <span class="destacar">Klissia Claudia</span></h1> <!-- A tag <span> é usada para aplicar estilos específicos a uma parte do texto, neste caso, a palavra "Klissia Claudia". -->
+            <p>Estudante de Ciência da Computação | Desenvolvedora Web & Mobile</p>
+            <a href="#projetos" class="btn">Explorar Projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre" -->
+     <section id="sobre" class="section">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-container">
+            <p>
+                Olá! Sou a Klissia Claudia, estudante de Ciência da Computação no Centro Universitário Eniac. Sou apaixonada por tecnologia, desenvolvimento de software e por transformar ideias criativas em soluções digitais funcionais e eficientes. A minha jornada une conhecimentos analíticos com a constante busca por inovações no universo da programação.
+            </p>
+        </div>
+    </section>
+
+        <!-- 3. HABILIDADES -->
+    <section id="habilidades" class="section alt-bg"> <!-- serve para o link do menu superior ("Habilidades") rolar a página diretamente até aqui -->
+        <h2 class="section-title">Habilidades</h2> <!-- O título da seção, mantendo o mesmo padrão visual (section-title) que vimos na parte "Sobre Mim".-->
+        <div class="skills-grid"> <!-- Serve para utilizar no CSS -->
+            <div class="skill-card"><b>Java</b></div>
+            <div class="skill-card"><b>Python</b></div>
+            <div class="skill-card"><b>JavaScript</b></div> <!-- Dentro de cada caixinha, a tag <b> deixa o nome da tecnologia em negrito para dar destaque visual. -->
+            <div class="skill-card"><b>HTML5 & CSS3</b></div>
+            <div class="skill-card"><b>MySQL</b></div>
+            <div class="skill-card"><b>Git & GitHub</b></div>
+            <div class="skill-card"><b>VS Code</b></div>
+            <div class="skill-card"><b>Android Studio</b></div>
+        </div>
+    </section>
+
+    <!-- 4. TRAJETÓRIA PROFISSIONAL -->
+    <section id="profissional" class="section"> <!-- O bloco estrutural da seção. O id="profissional" permite que o link "Profissional" do menu superior traga o usuário direto para cá. -->
+        <h2 class="section-title">Trajetória Profissional</h2>
+        <div class="professional-container"> <!-- dar acesso ao CSS -->
+            <div class="prof-card">
+                <h3>Estágio em TI e Desenvolvimento</h3>
+                <p class="prof-local">Centro Universitário Eniac</p>
+                <p>Atuação em desenvolvimento de aplicações web, ferramentas low-code, automação e conceitos de computação em nuvem.</p>
+            </div>
+            <div class="prof-card">
+                <h3>Técnica de Enfermagem (Centro Cirúrgico)</h3>
+                <p class="prof-local">Área da Saúde</p>
+                <p>Experiência sólida em ambientes de alta exigência, gestão de fluxos críticos, trabalho sob pressão e precisão operatória.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRINCIPAIS PROJETOS -->
+    <section id="projetos" class="section alt-bg">
+        <h2 class="section-title">Principais Projetos</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <h3>Torcida Prime Store</h3>
+                <p>E-commerce de camisas de futebol desenvolvido com HTML, CSS, JavaScript e MySQL.</p>
+                <a href="https://github.com/KliPro/Torcida-Prime-Store" target="_blank" class="project-link">Ver no GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Estética Alessandra</h3>
+                <p>Aplicação web focada em serviços, agendamentos e gestão para o setor de estética.</p>
+                <a href="https://github.com/KliPro/estetica-alessandra" target="_blank" class="project-link">Ver no GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>SyncOps</h3>
+                <p>Aplicativo móvel de produtividade ágil para Android desenvolvido em Java e XML no Android Studio.</p>
+                <a href="https://github.com/KliPro/SyncOps" target="_blank" class="project-link">Ver no GitHub</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+   
+
